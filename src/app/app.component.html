@@ -1,4 +1,4 @@
-<form>
+<div>
     <div class="form-content">
       <img src="../assets/coffee-logo.jpeg"/>
       <ul> Submit you contact information if you need:
@@ -7,16 +7,16 @@
         <li>Someone to talk</li>
       </ul>
       <label>
-        <input type="phone" formControlName="email" class="sd-form-control" placeholder="Enter your email.">
+        <input type="phone" [(ngModel)]= "phone" class="sd-form-control" placeholder="Enter your phone number.">
       </label>
       <label>
-        <input type="email" formControlName="phone" class="sd-form-control" placeholder="Enter your phone number.">
+        <input type="email" [(ngModel)]= "email" class="sd-form-control" placeholder="Enter your email address.">
       </label>
       <div class="form-submit">
-        <button type="submit">Submit</button>
+        <button type="submit" (click)="submitForm()">Submit</button>
       </div>
     </div>
-  </form>
+  </div>
   <footer>
       CoffeeStain.io | 2017
   </footer>
