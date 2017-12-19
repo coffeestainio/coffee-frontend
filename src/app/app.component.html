@@ -7,10 +7,10 @@
         <li>Someone to talk</li>
       </ul>
       <label>
-        <input type="phone" [(ngModel)]= "phone" class="sd-form-control" placeholder="Enter your phone number.">
+        <input type="phone" [(ngModel)]= "phone" class="sd-form-control" placeholder="Enter your phone number." maxlength="15" required >
       </label>
       <label>
-        <input type="email" [(ngModel)]= "email" class="sd-form-control" placeholder="Enter your email address.">
+        <input type="email" [(ngModel)]= "email" class="sd-form-control" placeholder="Enter your email address."maxlength="30" required>
       </label>
       <div class="form-submit">
         <button type="submit" (click)="submitForm()">Submit</button>
