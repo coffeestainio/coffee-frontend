@@ -1,4 +1,4 @@
 export class Config {
-    static apiUrl = "http://127.0.0.1:8080/api/";
+    static apiUrl = "https://coffeestain-api.herokuapp.com/api/";
     static token = "";
   } 
